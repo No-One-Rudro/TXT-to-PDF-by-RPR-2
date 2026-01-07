@@ -11,7 +11,8 @@
 export interface Token {
   text: string;
   color: string | null;       // Hex code or null for default black
-  bold?: boolean;             // For Keywords or MD Headers
+  bold?: boolean;
+  italic?: boolean; // For Keywords or MD Headers
   fontFamily?: 'monospace' | 'sans'; // For code blocks vs standard text
   sizeMod?: number;           // 1.0 = Normal, 1.5 = H1, etc.
 }

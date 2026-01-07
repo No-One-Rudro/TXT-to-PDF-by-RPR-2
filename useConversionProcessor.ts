@@ -101,7 +101,7 @@ export const useConversionProcessor = () => {
       const firstFile = queue[0].file.name.replace(/\.[^/.]+$/, "");
       baseName = firstFile;
       setSessionBaseName(baseName);
-      setSavedParams({ selectedEngine, widthStr, heightStr, fonts, borderConfig, outputMode, processingMode, PreFlightConfig });
+      setSavedParams({ selectedEngine, widthStr, heightStr, fonts, borderConfig, outputMode, processingMode, preFlightConfig });
       setGeneratedFiles([]);
       clearMissingCharacters();
       
